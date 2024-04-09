@@ -1,6 +1,6 @@
 # IRthemes
 
-Thèmes ggplot2 pour l’Institut Rhodanien
+Thèmes ggplot2 pour l'Institut Rhodanien
 
 ## Installation
 
