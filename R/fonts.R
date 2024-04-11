@@ -53,3 +53,23 @@ import_spl <- function() {
   suppressWarnings(suppressMessages(extrafont::font_import(spl_font_dir, prompt=FALSE)))
 }
 
+
+#' Import Molengo font
+#'
+#' TTF should be placed in the fonts/molengo folder
+#' @export
+import_mol <- function() {
+  mol_font_dir <- system.file("fonts", "molengo",package="IRthemes")
+  suppressWarnings(suppressMessages(extrafont::font_import(mol_font_dir, prompt=FALSE)))
+}
+
+
+#' Import Heebo font
+#'
+#' TTF should be placed in the fonts/heebo folder
+#' @export
+import_hee <- function() {
+  hee_font_dir <- system.file("fonts", "heebo",package="IRthemes")
+  suppressWarnings(suppressMessages(extrafont::font_import(hee_font_dir, prompt=FALSE)))
+}
+
