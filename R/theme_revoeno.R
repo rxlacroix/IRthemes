@@ -12,20 +12,19 @@
 #'
 
 theme_revoeno <- function (
-    base_family="Heebo", base_size=12,
+    base_family="Roboto", base_size=12,
     grid=TRUE,
     dark=FALSE
 )
 
 {
-  trev <- theme_light(base_family=base_family, base_size=base_size) +
-    theme(
-      plot.title = element_text(hjust=0, size = rel(1.5), face = "bold", margin = margin(2,0,5,0)),
-      plot.subtitle = element_text(hjust=0, size=rel(1), margin=margin(2,0,7,0)),
-      plot.caption = element_text(hjust=1,size = 7),
-      axis.title = element_text(size= rel(1), face = "bold"),
-      axis.text = element_text( size=rel(1),vjust=0.5),
-      panel.grid.minor = element_blank()
+  trev <- theme_classic(base_family = "Roboto", base_size = 12)+
+    theme(panel.border = element_rect(color = "black", fill = NA, size = 1),
+          axis.line = element_blank(),
+          axis.title = element_text(face = "bold", size = rel(1.5), color = "black", hjust = 1),
+          axis.text = element_text(face = "bold", size = rel(1), color = "black" ) ,
+          axis.ticks.length = unit(.25, "cm"),
+          plot.title = element_text(face = "bold", size = rel(2), color = "black" )
     )
 
   bgdark <- "#464950"
